@@ -1,5 +1,9 @@
 
 
+---
+
+---
+
 ```markdown
 # 🧠 Laboratorio 08 - Búsqueda Vectorial con PostgreSQL + pgvector
 
@@ -39,7 +43,7 @@
 ## 🏗️ Estructura del Proyecto
 
 ```
-lab08-pgvector-renace/
+LAB8_TABD/
 │
 ├── README.md
 ├── .gitignore
@@ -428,8 +432,8 @@ CREATE INDEX idx_expedientes_embedding ON expedientes_clinicos USING ivfflat (em
 ## 🚀 Cómo Ejecutar
 
 ```bash
-git clone https://github.com/tu-usuario/lab08-pgvector-renace.git
-cd lab08-pgvector-renace
+git clone https://github.com/dohch/LAB8_TABD.git
+cd LAB8_TABD
 
 python3 -m venv venv
 source venv/bin/activate
@@ -470,6 +474,3 @@ Estudiante de Ingeniería de Sistemas - UNSA
 pgvector es la solución más completa para sistemas que requieren combinar datos transaccionales con búsqueda semántica, ya que integra operadores vectoriales dentro de PostgreSQL permitiendo consultas híbridas (filtros SQL + similitud de vectores) en una sola operación atómica con ACID, superando a ChromaDB en integridad de datos y a FAISS en facilidad de uso, aunque su rendimiento bruto es inferior a FAISS, lo que lo hace ideal para sistemas como RENACE donde la consistencia de datos es prioritaria sobre la velocidad extrema.
 ```
 
----
-
-**¡LISTO!** Eso es todo. Copia ese bloque completo, pégalo en tu `README.md` y súbelo a GitHub. Todo está en formato Markdown, con tablas, código, emojis y estructura profesional.
